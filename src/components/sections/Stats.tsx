@@ -1,10 +1,10 @@
 import { motion } from 'motion/react';
 
 const stats = [
-  { label: 'Subscribers', value: '2.5M+', platform: 'YouTube' },
-  { label: 'Followers', value: '1.2M+', platform: 'TikTok' },
-  { label: 'Followers', value: '300K+', platform: 'Instagram' },
-  { label: 'Community', value: '50M+', platform: 'Monthly Impact' },
+  { label: 'Subscribers', value: '395+', platform: 'YouTube' },
+  { label: 'Followers', value: '200+', platform: 'Facebook' },
+  { label: 'Followers', value: '420+', platform: 'Instagram' },
+  { label: 'Followers', value: '10+', platform: 'TikTok' },
 ];
 
 const Stats = () => {

@@ -1,0 +1,10 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="skewX(-15) translate(50, 0)">
+    <!-- N Shape -->
+    <path d="M100 150H220C250 150 270 170 270 200V350H210V210H160V350H100V150Z" fill="white" />
+    <!-- G Shape -->
+    <path d="M280 350V210C280 180 300 150 330 150H450V200H340V350H450V250H380V200H450V150H470V250C470 280 450 350 420 350H280Z" fill="white" />
+    <!-- Red Accent on G -->
+    <path d="M330 150H470V195H330V150Z" fill="#E50914" />
+  </g>
+</svg>

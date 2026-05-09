@@ -4,7 +4,8 @@ import Hero from './components/sections/Hero';
 import Stats from './components/sections/Stats';
 import About from './components/sections/About';
 import Platforms from './components/sections/Platforms';
-import FeaturedContent from './components/sections/FeaturedContent';
+import Videos from './components/sections/Videos';
+import Contact from './components/sections/Contact';
 import CTA from './components/sections/CTA';
 import Footer from './components/layout/Footer';
 
@@ -20,7 +21,8 @@ export default function App() {
         <Stats />
         <About />
         <Platforms />
-        <FeaturedContent />
+        <Videos />
+        <Contact />
         <CTA />
       </main>
 
