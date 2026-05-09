@@ -61,7 +61,12 @@ const Videos = () => {
               transition={{ duration: 1.2, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="group relative flex flex-col gap-6"
             >
-              <div className="relative overflow-hidden rounded-[40px] aspect-video ios-card">
+              <div className="relative overflow-hidden rounded-[24px] aspect-video macos-card group-hover:border-accent-red/40">
+                <div className="absolute top-4 left-6 flex gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                  <div className="w-1.5 h-1.5 rounded-full dot-red" />
+                  <div className="w-1.5 h-1.5 rounded-full dot-yellow" />
+                  <div className="w-1.5 h-1.5 rounded-full dot-green" />
+                </div>
                 <img 
                   src={video.thumbnail} 
                   alt={video.title} 
@@ -77,10 +82,10 @@ const Videos = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-2 px-2">
-                <h3 className="text-xl font-bold tracking-[-0.03em] uppercase group-hover:text-accent-red transition-colors">
+                <h3 className="text-xl font-bold tracking-[-0.03em] uppercase group-hover:text-accent-red transition-colors text-white/95">
                   {video.title}
                 </h3>
-                <span className="text-[10px] text-white/20 font-bold uppercase tracking-[0.4em]">Cinematic Release</span>
+                <span className="text-[10px] text-white/50 font-bold uppercase tracking-[0.4em]">Cinematic Release</span>
               </div>
             </motion.a>
           ))}

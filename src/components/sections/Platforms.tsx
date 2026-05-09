@@ -47,7 +47,7 @@ const Platforms = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-[10px] uppercase tracking-[0.5em] text-white/30 font-bold mb-10"
+          className="text-[10px] uppercase tracking-[0.5em] text-white/60 font-bold mb-12"
         >
           Our Networks
         </motion.h2>
@@ -63,9 +63,15 @@ const Platforms = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1.2, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="ios-card group p-8 flex flex-col justify-between h-[280px] hover:bg-white/[0.05] transition-all duration-700 shadow-2xl"
+              className="macos-card group p-8 flex flex-col justify-between h-[300px] relative hover:border-accent-red/40"
             >
-              <div className="flex justify-between items-start">
+              <div className="absolute top-4 left-6 flex gap-1.5 opacity-30 group-hover:opacity-100 transition-opacity">
+                <div className="w-2 h-2 rounded-full dot-red" />
+                <div className="w-2 h-2 rounded-full dot-yellow" />
+                <div className="w-2 h-2 rounded-full dot-green" />
+              </div>
+
+              <div className="flex justify-between items-start mt-4">
                 <div className="flex flex-col gap-1">
                   <span className="text-[10px] font-bold tracking-[0.3em] text-accent-red uppercase">{platform.name}</span>
                   <span className="text-xl font-bold tracking-tight truncate max-w-[180px] text-white/90 group-hover:text-white transition-colors">{platform.handle}</span>
@@ -78,9 +84,9 @@ const Platforms = () => {
               <div className="flex flex-col gap-5">
                 <div className="flex flex-col gap-1">
                   <span className="text-4xl font-light tracking-[-0.05em] serif italic text-white/95 group-hover:text-accent-red transition-colors duration-500">{platform.audience}</span>
-                  <span className="text-[10px] uppercase tracking-[0.3em] text-white/40 font-bold group-hover:text-white/60">Engagement metric</span>
+                  <span className="text-[10px] uppercase tracking-[0.3em] text-white/50 font-bold group-hover:text-white/80">Engagement metric</span>
                 </div>
-                <p className="text-xs text-white/60 font-medium leading-relaxed tracking-wide group-hover:text-white/80 transition-colors">
+                <p className="text-xs text-white/80 font-medium leading-relaxed tracking-wide group-hover:text-white transition-colors">
                   {platform.content}
                 </p>
               </div>

@@ -25,16 +25,16 @@ const About = () => {
             transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col gap-8"
           >
-            <p className="text-lg md:text-xl text-white/70 leading-tight font-medium tracking-tight max-w-md">
+            <p className="text-lg md:text-xl text-white/90 leading-tight font-medium tracking-tight max-w-md">
               We define the next era of digital entertainment through minimalist design and cinematic authority.
             </p>
-            <p className="text-sm text-white/50 leading-relaxed font-light tracking-wide">
+            <p className="text-sm text-white/70 leading-relaxed font-light tracking-wide">
               Chittagong based. Globally minded.
             </p>
             
-            <div className="h-[1px] w-12 bg-accent-red/30" />
+            <div className="h-[1px] w-12 bg-accent-red/50" />
             
-            <span className="text-[10px] uppercase tracking-[0.4em] text-white/40 font-bold">
+            <span className="text-[10px] uppercase tracking-[0.4em] text-white/60 font-bold">
               Est. 2024 / NEXT MEDIA GROUP
             </span>
           </motion.div>

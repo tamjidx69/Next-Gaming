@@ -2,17 +2,17 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Inter", system-ui, sans-serif;
-  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", system-ui, sans-serif;
+  --font-sans: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Inter", system-ui, sans-serif;
+  --font-display: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Inter", system-ui, sans-serif;
   --font-editorial: "Playfair Display", serif;
   --color-bg-primary: #000000;
   --color-bg-secondary: #050505;
-  --color-accent-red: #FF3B30; /* iOS Red */
+  --color-accent-red: #FF3B30; /* macOS/iOS Red */
 }
 
 :root {
   background-color: var(--color-bg-primary);
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 html {
@@ -60,12 +60,34 @@ body {
   font-family: var(--font-editorial);
 }
 
-/* iOS Glass Effect */
+/* macOS Glass Effect */
 .glass {
-  background: rgba(20, 20, 20, 0.4);
-  backdrop-filter: blur(40px) saturate(200%);
-  -webkit-backdrop-filter: blur(40px) saturate(200%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(20, 20, 20, 0.45);
+  backdrop-filter: blur(50px) saturate(210%);
+  -webkit-backdrop-filter: blur(50px) saturate(210%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.macos-card {
+  @apply bg-black/40 border border-white/10 rounded-[24px] backdrop-blur-3xl overflow-hidden shadow-2xl;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.macos-card:hover {
+  @apply bg-white/[0.04] border-white/20;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* macOS Window Controls Placeholder */
+.window-dot {
+  @apply w-3 h-3 rounded-full shadow-inner;
+}
+.dot-red { @apply bg-[#FF5F56] border border-[#E0443E]; }
+.dot-yellow { @apply bg-[#FFBD2E] border border-[#DEA123]; }
+.dot-green { @apply bg-[#27C93F] border border-[#1AAB29]; }
+
+.macos-window-header {
+  @apply absolute top-0 left-0 w-full h-10 flex items-center px-5 gap-2 border-b border-white/[0.05];
 }
 
 .ios-card {
