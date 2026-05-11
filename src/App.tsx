@@ -5,6 +5,7 @@ import Stats from './components/sections/Stats';
 import About from './components/sections/About';
 import Platforms from './components/sections/Platforms';
 import Videos from './components/sections/Videos';
+import Setup from './components/sections/Setup';
 import Contact from './components/sections/Contact';
 import CTA from './components/sections/CTA';
 import Footer from './components/layout/Footer';
@@ -21,6 +22,7 @@ export default function App() {
         <Stats />
         <About />
         <Platforms />
+        <Setup />
         <Videos />
         <Contact />
         <CTA />
